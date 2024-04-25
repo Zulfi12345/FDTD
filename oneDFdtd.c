@@ -52,11 +52,9 @@ int main() {
         fprintf(gnuplotPipe, "e\n");
         fflush(gnuplotPipe);
 
-        // Pause to observe animation
-        usleep(100000); // Adjust this value to control the animation speed
+        usleep(100000); 
     }
 
-    // Close gnuplot
     pclose(gnuplotPipe);
 
     return 0;
